@@ -1,5 +1,6 @@
 # helper_Functions
 Repository for my custom helper functions for web development*.
+
 *Pre installed patented SHABLAKA!(Its just simple magic and wizardry.
 
 The first function will be my navigation builder. Simple (probably over done) javascript navagation builder that requires 2 arrays, one is a list of  text for links, and the other for the actual list of file names/urls. 
