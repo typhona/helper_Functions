@@ -1,0 +1,135 @@
+/* Setting variables for easy color management */
+:root {
+  --background: #efefef;
+  --navBg: #898989;
+  --footer: #FFD400;
+}
+
+/* Reseting the default behavior of most browsers */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.nav_section {
+  background: var(--navBg);
+  padding: 0 0 20px 0;
+  ;
+}
+
+.nav_title {
+  margin: 20px auto;
+  text-align: center;
+  color: var(--background);
+}
+
+.nav-toggle-label span,
+.nav-toggle-label::before,
+.nav-toggle-label::after {
+  display: block;
+  background: var(--background);
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+.nav-toggle-label::before,
+.nav-toggle-label::after {
+  content: '';
+  position: relative;
+}
+
+.nav-toggle-label::before {
+  bottom: 10px;
+}
+
+.nav-toggle-label::after {
+  top: 10px;
+}
+
+nav {
+  font-size: .9em;
+  color: var(--background);
+  font-weight: 400;
+  display: none;
+}
+
+.nav-toggle:checked~nav {
+  display: block;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.nav_item {
+  list-style: none;
+  margin-top: 1rem;
+  ;
+}
+
+.nav_link {
+  color: var(--background);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer {
+  padding: 10px;
+  background: var(--footer);
+  text-align: center;
+}
+
+/* ############################################### */
+/* #************Full Screen Stylesheet***********# */
+/* ############################################### */
+@media screen and (min-width: 992px) {
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav_section {
+    background: var(--background);
+    padding: 0 0 20px 0;
+    color: var(--navBg);
+  }
+
+  .nav_title {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    padding: 10px;
+  }
+
+  .nav_link {
+    color: var(--navBg);
+    margin: 0 20px;
+  }
+
+  #nav_list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
