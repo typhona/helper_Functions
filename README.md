@@ -1,5 +1,5 @@
 # helper_Functions
-Repository for my custom helper functions for web development*.
+Repository for my helper functions for web development*.
 
 *Pre installed patented SHABLAKA!(Its just simple magic and wizardry.)
 
