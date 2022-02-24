@@ -1,8 +1,8 @@
 // Autofill navigation on all pages. use a UL with the class of "nav" for main navigation v1
 
 // Navigation Text and links listing
-let navText = ['House', 'Food', 'Work'];
-let navLinks = ['house.html', 'food.html', 'work.html'];
+let navText = [];
+let navLinks = [];
 
 
 
