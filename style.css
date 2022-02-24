@@ -1,12 +1,12 @@
 /* Setting variables for easy color management */
 :root {
   --background: #efefef;
-  --navBg: #898989;
-  --footer: #FFD400;
+  --gradient: linear-gradient(10deg, #00ff00, #0000ff, #ff00ff);
+  --navBlue: #0000ff;
+  --footer: #4287f5;
 }
 
 /* Reseting the default behavior of most browsers */
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -14,19 +14,24 @@
 }
 
 header {
+  z-index: 999;
   width: 100%;
   margin-bottom: 2rem;
+  /* border: 2px solid red; */
 }
+
 .nav_section {
-  background: var(--navBg);
+  background: var(--navBlue);
   padding: 0 0 20px 0;
   ;
 }
 
 .nav_title {
+  font-family: 'Ubuntu', sans-serif;
   margin: 20px auto;
   text-align: center;
   color: var(--background);
+  /* border: 2px solid red; */
 }
 
 .nav-toggle-label span,
@@ -38,6 +43,7 @@ header {
   width: 2em;
   border-radius: 2px;
   margin: 0 auto;
+  /* border: 2px solid red; */
 }
 
 .nav-toggle-label::before,
@@ -57,12 +63,14 @@ header {
 nav {
   font-size: .9em;
   color: var(--background);
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   display: none;
 }
 
 .nav-toggle:checked~nav {
   display: block;
+
 }
 
 .nav-toggle {
@@ -76,20 +84,33 @@ nav {
   text-align: center;
 }
 
-.nav_item {
+.sub_nav_list {
+  display: none;
+}
+
+.nav_list_item {
   list-style: none;
   margin-top: 1rem;
   ;
 }
 
-.nav_link {
+.nav_list_link {
   color: var(--background);
   text-decoration: none;
   font-size: 1.2rem;
 }
 
+.nav_carrot {
+  margin-left: 5px;
+}
+
+.active {
+  border-bottom: 2px solid;
+}
+
 .footer {
   padding: 10px;
+  /* display: flex; */
   background: var(--footer);
   text-align: center;
 }
@@ -98,7 +119,6 @@ nav {
 /* #************Full Screen Stylesheet***********# */
 /* ############################################### */
 @media screen and (min-width: 992px) {
-
   header {
     display: flex;
     align-items: center;
@@ -108,11 +128,12 @@ nav {
   .nav_section {
     background: var(--background);
     padding: 0 0 20px 0;
-    color: var(--navBg);
+    color: var(--navBlue);
   }
 
   .nav_title {
     display: none;
+    /* font-family: 'Ubuntu', sans-serif; */
   }
 
   .nav-toggle-label {
@@ -122,14 +143,17 @@ nav {
   nav {
     display: flex;
     padding: 10px;
+    /* border: 2px solid red; */
   }
 
-  .nav_link {
-    color: var(--navBg);
+  .nav_list_link {
+    /* font-size: 1rem; */
+    color: var(--navBlue);
     margin: 0 20px;
   }
 
-  #nav_list {
+  #nav {
     flex-direction: row;
     justify-content: space-between;
   }
+
