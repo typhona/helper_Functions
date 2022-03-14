@@ -1,8 +1,11 @@
 // Autofill navigation on all pages. use a UL with the class of "nav" for main navigation v1
 
 // Navigation Text and links listing
-let navText = ["link1", "link2", "link3"];
-let navLinks = ["#", "#", "#"];
+let navText = [];
+let navLinks = [];
+
+
+
 
 
 function navBuilder(id, textList, linkList) {
@@ -13,15 +16,13 @@ function navBuilder(id, textList, linkList) {
 
   // looping through the arrays and matching the text with the link
   for (let i = 0; i < textList.length; i++) {
-    listItem = document.createElement('li');
 
+    listItem = document.createElement('li');
     // adds classes
     listItem.className = id + '_list_item';
     linkClass = id + "_list_link";
-
     // put it all together
-    text = "<a href=\"" + linkList[i] + "\" class=\"" + linkClass + "\">" + textList[i] + "</a></li>"
-    listItem.innerHTML += text;
+    listItem.innerHTML += "<a href=\"" + linkList[i] + "\" class=\"" + linkClass + "\">" + textList[i] + "</a></li>";
     navList.appendChild(listItem);
   }
 

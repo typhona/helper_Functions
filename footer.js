@@ -3,8 +3,8 @@ let currentDate = new Date();
 let year = currentDate.getFullYear();
 
 function makeFooter() {
-//   Useful for making a single change and it populates the entire site
-  document.getElementById("footer").innerHTML = "Copyright &#169 " + year + " Little Ma Productions";
+  //   Useful for making a single change and it populates the entire site
+  document.getElementById("footer").innerHTML = "Your copyright &#169 " + year + " you";
 }
 
 makeFooter();

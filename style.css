@@ -13,11 +13,19 @@
   box-sizing: border-box;
 }
 
+body {
+  background: var(--background);
+}
+
 header {
   z-index: 999;
   width: 100%;
   margin-bottom: 2rem;
   /* border: 2px solid red; */
+}
+
+h1 {
+  text-transform: capitalize;
 }
 
 .nav_section {
@@ -70,7 +78,6 @@ nav {
 
 .nav-toggle:checked~nav {
   display: block;
-
 }
 
 .nav-toggle {
@@ -98,6 +105,7 @@ nav {
   color: var(--background);
   text-decoration: none;
   font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
 .nav_carrot {
@@ -112,7 +120,9 @@ nav {
   padding: 10px;
   /* display: flex; */
   background: var(--footer);
+  color: var(--background);
   text-align: center;
+  text-transform: capitalize;
 }
 
 /* ############################################### */
@@ -129,6 +139,7 @@ nav {
     background: var(--background);
     padding: 0 0 20px 0;
     color: var(--navBlue);
+    /* border: 2px solid red; */
   }
 
   .nav_title {
@@ -143,7 +154,6 @@ nav {
   nav {
     display: flex;
     padding: 10px;
-    /* border: 2px solid red; */
   }
 
   .nav_list_link {
@@ -156,4 +166,3 @@ nav {
     flex-direction: row;
     justify-content: space-between;
   }
-
