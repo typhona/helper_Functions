@@ -6,6 +6,8 @@ links, and the other for the actual list of file names/urls.
 
 
 
+I am aware that differrent libraries and frameworks handle this, its just a little tool i made for me, if you like it use it.
+
 For sites with a small amount of links, this is probably overkill. However when you start dealing with sites 
 that have upwards of 10 pages it can become tedious to maintain all the navigation. This is just my attempt
 to make it a little smoother.
